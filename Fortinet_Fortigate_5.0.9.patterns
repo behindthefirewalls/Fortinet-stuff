@@ -1,0 +1,49 @@
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{NUMBER:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} applist=%{QUOTEDSTRING:applist} duration=%{INT:duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{NUMBER:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} duration=%{INT:duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{DATA:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{WORD}\s*%{WORD} proto=%{INT:proto} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} app=%{DATA,app} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} app=%{DATA,app} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOST:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} app=%{USER:app} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
+      add_tag => ["Fortigate"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOST:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} appid=%{NUMBER:appid} app=%{QS:app} appcat=%{QS:appcat} applist=%{QS:applist} appact=%{USER:appact} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
+      add_tag => ["Fortigate-APP"]
+    }
+
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} appid=%{NUMBER,appid} app=%{DATA,app} appcat=\"%{GREEDYDATA:appcat}\" applist=\"%{GREEDYDATA:applist}\" appact=%{WORD,appact} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
+      add_tag => ["fortigate-APP"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} eventtype=%{WORD:eventtype} level=%{WORD:level} vd=%{QUOTEDSTRING:vd} severity=%{WORD:severity} srcip=%{IP:srcip} dstip=%{IP:dstip} srcintf=%{DATA:srcintf} dstintf=%{DATA:dstintf} policyid=%{NUMBER:policyid} identidx=%{INT:identidx} sessionid=%{INT:sessionid} status=%{WORD:status} proto=%{INT:proto} service=%{DATA,service} count=%{INT:count} attackname=\"%{GREEDYDATA:attackname}\" srcport=%{NUMBER:srcport} dstport=%{NUMBER:dstport} attackid=%{NUMBER:attackid} sensor=%{QS,sensor} ref=\"%{GREEDYDATA:ref}\" incidentserialno=%{NUMBER,incidentserialno} msg=\"%{GREEDYDATA:msg}\"" ]
+      add_tag => ["fortigate-IPS"]
+    }
+    grok {
+      match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOST:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} applist=%{QS:applist} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} utmaction=%{WORD:utmaction} utmevent=%{USER:utmevent} utmseverity=%{USER:severity} attackid=%{NUMBER:attackid} attack=%{QS:attack} hostname=%{QS:URL}" ]
+      add_tag => ["Fortigate-IPS"]
+    }
