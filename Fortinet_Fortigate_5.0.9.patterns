@@ -12,19 +12,19 @@
     }
     grok {
       match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} app=%{DATA,app} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
-      add_tag => ["Fortigate-V"]
+      add_tag => ["Fortigate-IV"]
     }
     grok {
       match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} app=%{DATA,app} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte} sentpkt=%{INT:sentpkt} rcvdpkt=%{INT:rcvdpkt}" ]
-      add_tag => ["Fortigate-VI"]
+      add_tag => ["Fortigate-V"]
     }
     grok {
       match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOSTNAME:vd} srcip=%{IP:srcip} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
-      add_tag => ["Fortigate-VII"]
+      add_tag => ["Fortigate-VI"]
     }
     grok {
       match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOST:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} app=%{USER:app} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
-      add_tag => ["Fortigate-VIII"]
+      add_tag => ["Fortigate-VII"]
     }
     grok {
       match => ["message" , "%{YEAR:year}\-%{MONTHNUM:month}\-%{MONTHDAY:day} time=%{TIME:time} devname=%{HOST:hostname} devid=%{HOST:devid} logid=%{NUMBER:logid} type=%{WORD:class} subtype=%{WORD:subtype} level=%{WORD:level} vd=%{HOST:vd} srcip=%{IP:srcip} srcport=%{NUMBER:srcport} srcintf=%{DATA:srcintf} dstip=%{IP:dstip} dstport=%{NUMBER:dstport} dstintf=%{DATA:dstintf} sessionid=%{INT:sessionid} status=%{WORD:status} policyid=%{NUMBER:policyid} dstcountry=%{QUOTEDSTRING:dstcountry} srccountry=%{QUOTEDSTRING:srccountry} trandisp=%{WORD:trandisp} service=%{DATA:service} proto=%{INT:proto} appid=%{NUMBER:appid} app=%{QS:app} appcat=%{QS:appcat} applist=%{QS:applist} appact=%{USER:appact} duration=%{NUMBER,duration} sentbyte=%{INT:sentbyte} rcvdbyte=%{INT:rcvdbyte}" ]
