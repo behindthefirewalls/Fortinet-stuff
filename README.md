@@ -1,2 +1,2 @@
 # Fortinet-stuff
-# Some things I did with this vendo that I want to share.
+# Some things I did with this vendor that I want to share.
