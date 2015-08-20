@@ -1,62 +1,57 @@
 config application custom
-    edit "External.IP.Lookup.-whoer.net-.Custom"
-        set comment ''
-        set signature "F-SBID( --attack_id 8055; --name \"External.IP.Lookup.-whoer.net-.Custom\"; --app_cat 25;  --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --parsed_type HTTP_GET; --pattern \"whoer.net\"; --no_case; --context host; )"
-        set category 25
-    next
     edit "External.IP.Lookup.-ipinfo.io-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 4381; --name \"External.IP.Lookup.-ipinfo.io-.Custom\"; --app_cat 25;  --pattern \"ipinfo.io\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 4381; --name \"External.IP.Lookup.-ipinfo.io-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"ipinfo.io\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-www.bravica.net-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 5112; --name \"External.IP.Lookup.-www.bravica.net-.Custom\"; --app_cat 25;  --pattern \"www.bravica.net\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 5112; --name \"External.IP.Lookup.-www.bravica.net-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"www.bravica.net\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-ip.webmasterhome.cn-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 5112; --name \"External.IP.Lookup.-ip.webmasterhome.cn-.Custom\"; --app_cat 25;  --pattern \"ip.webmasterhome.cn\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 5112; --name \"External.IP.Lookup.-ip.webmasterhome.cn-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"ip.webmasterhome.cn\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-www.whatsmyip.us-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 3767; --name \"External.IP.Lookup.-www.whatsmyip.us-.Custom\"; --app_cat 25;  --pattern \"www.whatsmyip.us\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 3767; --name \"External.IP.Lookup.-www.whatsmyip.us-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"www.whatsmyip.us\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-myip.kz-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 9910; --name \"External.IP.Lookup.-myip.kz-.Custom\"; --app_cat 25;  --pattern \"myip.kz\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 9910; --name \"External.IP.Lookup.-myip.kz-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"myip.kz\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-checkip.dyndns.org-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 4467; --name \"External.IP.Lookup.-checkip.dyndns.org-.Custom\"; --app_cat 25;  --pattern \"checkip.dyndns.org\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 4467; --name \"External.IP.Lookup.-checkip.dyndns.org-.Custom\"; --app_cat 25;--protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"checkip.dyndns.org\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-wtfismyip.com-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 7307; --name \"External.IP.Lookup.-wtfismyip.com-.Custom\"; --app_cat 25;  --pattern \"wtfismyip.com\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 7307; --name \"External.IP.Lookup.-wtfismyip.com-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"wtfismyip.com\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-myexternalip.com-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 2819; --name \"External.IP.Lookup.-myexternalip.com-.Custom\"; --app_cat 25;  --pattern \"myexternalip.com\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 2819; --name \"External.IP.Lookup.-myexternalip.com-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"myexternalip.com\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-ip-addr.es-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 8810; --name \"External.IP.Lookup.-ip-addr.es-.Custom\"; --app_cat 25;  --pattern \"ip-addr.es\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 8810; --name \"External.IP.Lookup.-ip-addr.es-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"ip-addr.es\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-curlmyip.com-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 8183; --name \"External.IP.Lookup.-curlmyip.com-.Custom\"; --app_cat 25;  --pattern \"curlmyip.com\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
+        set signature "F-SBID( --attack_id 8183; --name \"External.IP.Lookup.-curlmyip.com-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"curlmyip.com\"; --context host; --no_case; )"
         set category 25
     next
     edit "External.IP.Lookup.-ip-api-.Custom"
         set comment ''
-        set signature "F-SBID( --attack_id 5188; --name \"External.IP.Lookup.-ip-api-.Custom\"; --app_cat 25;  --pattern \"xml\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context uri; --pattern \"ip-api.com\"; --context host; )"
+        set signature "F-SBID( --attack_id 5188; --name \"External.IP.Lookup.-ip-api-.Custom\"; --app_cat 25; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --pattern \"ip-api.com\"; --context host; --no_case; --pattern \"xml\"; --context uri; --no_case; )"
         set category 25
     next
 end
