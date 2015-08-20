@@ -54,4 +54,9 @@ config application custom
         set signature "F-SBID( --attack_id 8183; --name \"External.IP.Lookup.-curlmyip.com-.Custom\"; --app_cat 25;  --pattern \"curlmyip.com\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context host; )"
         set category 25
     next
+    edit "External.IP.Lookup.-ip-api-.Custom"
+        set comment ''
+        set signature "F-SBID( --attack_id 5188; --name \"External.IP.Lookup.-ip-api-.Custom\"; --app_cat 25;  --pattern \"xml\"; --protocol tcp; --service HTTP; --parsed_type HTTP_GET; --flow from_client; --no_case; --context uri; --pattern \"ip-api.com\"; --context host; )"
+        set category 25
+    next
 end
